@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+          content="sitio Web sobre Covid-19 o Sars CoV2, representacion gráfica de Cuba, provincia la Habana " />
+    <title>Covid-19 Habana Cuba</title>    
+    <link rel="shortcut icon" href="../static/libs/aatom.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../static/libs/morris.css">    
+    <script src="../static/libs/jquery.min.js"></script>
+    <script src="../static/libs/morris.min.js"></script>
+    <script src="../static/libs/raphael-min.js"></script>
+    <link rel="stylesheet" href="../static/libs/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">       
+        <script src="../static/libs/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">WEB Papus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{url_for('cuba')}} ">Cuba</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('italia')}} ">Italia</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    <main>
+        <div class="container">
+            <h1>Covid-19 Cuba</h1>
+            <hr>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h2>Cuba Positivos diario</h2>
+                    <hr>
+                    <div id="cubaLinea"></div>
+                    <footer>
+                        <ul>
+                            <li><span class="cuba">..</span>Casos diario CUBA</li>
+                            <li><span class="habana">..</span>Casos diario HABANA</li>
+                        </ul>
+                    </footer>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Cuba día-día </h2>
+                    <hr>
+                    <div id="area_Cuba"></div>
+                    <footer>
+                        <ul>
+                            <li><span class="positivos">--</span>Casos POSITIVOS acumulados</li>
+                            <li><span class="curados">--</span>Casos CURADOS acumulados</li>
+                            <li><span class="fallecidos">--</span>Casos FALLECIDOS acumulados</li>
+                        </ul>
+                    </footer>
+                </div>
+
+                <!-- <div class="col-md-6">
+                    <h2>Test Area Cuba </h2>
+                    <hr>
+                    <div id=""></div>
+                </div> -->
+                <div class="col-md-6">
+                    <div class="imagen">
+                        <a href="../static/img/map-tele.jpg"><span>Mapa-Telefonico</span></a>
+                        <!-- <h2>Positivos_actual /Curados /Fallecidos</h2> -->
+                        <img src="../static/img/covid.png" width="100%" height="100px">
+                        <br>
+                        <img src="../static/img/covi.png" width="100%" height="100px">
+
+                     <div class="pastel">
+                        <div id="cubaCirculo" class="cubaCirculo"></div>
+                     </div>                       
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../static/libs/graphcuba.js"></script>
+</body>
+
+</html>

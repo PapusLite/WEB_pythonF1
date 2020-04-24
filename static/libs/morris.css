@@ -1,0 +1,107 @@
+.morris-hover {
+    position: absolute;
+    z-index: 1000
+}
+
+.morris-hover.morris-default-style {
+    border-radius: 10px;
+    padding: 6px;
+    color: #666;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid 2px rgba(230, 230, 230, 0.8);
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0
+}
+
+
+/* mi parte de css si */
+/* ------------------------------------------------------------- */
+
+
+.container {
+background: #ccc;
+}
+
+.container  h1 {
+color: red;
+font-weight: 4005;
+text-align: center;
+box-shadow: 10px 13px 10px 0px darkslategray;
+border: 2px dashed darkslategray;
+padding: 5px;
+}
+
+.container  h1  span {
+box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.col-md-6 {
+padding: 20px;
+height: 100%;
+}
+
+.col-md-6  img {
+margin-bottom: 5px;
+}
+
+.col-md-6  h2 {
+background-color: black;
+color: white;
+font-size: 30px;
+padding: 5px 15px 10px 15px;
+font-weight: 300;
+text-align: center;
+}
+
+
+.imagen {
+text-align: center;
+margin: auto; 
+width: 90%; 
+padding: 3px; 
+}
+
+.col-md-6  a  span {
+color: white;
+background: black;
+font-size: 18px;
+margin
+margin: 0 0 10px 0;      
+}
+
+.col-md-6  footer > ul{    
+width: 95%;
+list-style: none;
+background: #414141;
+
+}
+
+.col-md-6  footer  ul  li {
+/* color: #9e9797; */
+color: #ccc;
+font: 300 15px italic; 
+padding-bottom: 10px;  
+}
+
+.col-md-6  footer  ul  span {
+padding: 0 10px 0 0;  
+font: bold 20px verdana;    
+}
+
+.cuba  {color: blue;}
+.habana  {color: red;}
+.positivos { color: blue;}
+.curados  { color: #CCCC00;}
+.fallecidos { color: red;}
+
